@@ -7,6 +7,6 @@ public class M2After {
     }
 
     public static void main(String[] args) {
-
+        print1();
     }
 }
