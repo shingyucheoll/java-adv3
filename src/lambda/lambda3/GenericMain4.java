@@ -1,4 +1,4 @@
-package lambda.ex3;
+package lambda.lambda3;
 
 public class GenericMain4 {
 
