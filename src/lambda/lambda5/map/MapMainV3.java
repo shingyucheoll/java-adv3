@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
-public class MapMainV2 {
+public class MapMainV3 {
 
     public static void main(String[] args) {
         List<String> strings = List.of("1", "12", "123", "1234");
@@ -20,4 +20,6 @@ public class MapMainV2 {
         List<Integer> toLength = map(strings, s -> s.length());
         System.out.println("integers = " + toLength);
     }
+
+
 }
