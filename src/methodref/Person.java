@@ -42,7 +42,7 @@ public class Person {
 
     // 인스턴스 메서드
     public String introduce() {
-        return "I am" + name;
+        return "I am " + name;
     }
 
     // 인스턴스 메서드 ( 파라미터 있음 )
