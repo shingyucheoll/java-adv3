@@ -49,4 +49,14 @@ public class Person {
     public String introduceWithNumber(int number) {
         return "I am " + name + ", my number is " + number;
     }
+
+    // 인스턴스 메서드 ( 파라미터 2개 )
+    public String introduceWithDetails(int number, String location) {
+        return "I am " + name + ", my number is " + number + ", from " + location;
+    }
+
+    // 인스턴스 메서드 ( 파라미터 3개 )
+    public String introduceWithFullDetails(int number, String location, int age) {
+        return "I am " + name + ", my number is " + number + ", from " + location + ", age " + age;
+    }
 }
