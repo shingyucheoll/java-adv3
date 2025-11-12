@@ -52,5 +52,10 @@ public class MyStreamV3<T> {
             consumer.accept(element);
         }
     }
+
+    // 추가
+    public T getFirst() {
+        return internalList.getFirst();     // Java 21 부터 지원 ! get(0) -> getFirst()
+    }
 }
 
