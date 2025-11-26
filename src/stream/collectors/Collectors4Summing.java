@@ -43,6 +43,6 @@ public class Collectors4Summing {
         System.out.println("statistics.getAverage() = " + statistics.getAverage());
         System.out.println();
 
-
     }
+
 }
