@@ -27,7 +27,7 @@ public class ParallelMain3 {
         Future<Integer> future2 = es.submit(task2);
 
         // 3. join - 처리 결과 병합
-        Integer result1 = future1.get();
+        Integer result1 = future1.get();        // get() 은 Blocking 메서드로 작업을 기다립니다.
         Integer result2 = future2.get();
         log("main thread 대기 완료 - (모든 thread 작업 완료)");
         int sum = result1 + result2;
