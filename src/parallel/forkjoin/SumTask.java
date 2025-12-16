@@ -42,7 +42,7 @@ public class SumTask extends RecursiveTask<Integer> {
 			SumTask leftTask = new SumTask(leftList);
 			SumTask rightTask = new SumTask(rightList);
 
-			// 왼쪽 작업은 다른 스레드에서 처리
+			// 왼쪽 작업을 workQueue에 적재 !
 			leftTask.fork();
 			// 오른쪽 작업은 현재 스레드에서 직접 처리 (compute() 로 실행하여 else 문에 도달 후 다시 compute()를 현재 스레드에서 호출한다 -> (재귀호출))
 			// 작업 갯수가 8개인 상태에서 / 2 로 생성된 Task 로 compute()를 호출하게 되면 if문 조건이 성립하여 직접 작업이 실행된다.
